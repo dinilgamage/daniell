@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="./webmanifest/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./webmanifest/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./webmanifest/favicon-16x16.png">
+    <link rel="manifest" href="./webmanifest/site.webmanifest">
+    <link rel="mask-icon" href="./webmanifest/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="manifest" href="./webmanifest/manifest.json">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceylon Tea Museum</title>
+    <link rel="stylesheet" href="./CSS/museum.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <!--Navbar at the top-->
+        <nav>
+            <a href="./index.html"><img class="logo" src="./images/Logo.png" alt="logo"></a>
+            <!--Hamburger Menu Svg-->
+            <div class="dropdown">
+                <svg viewBox="0 0 100 80" width="50" height="50" class="menu">
+                    <rect width="100" height="20"></rect>
+                    <rect y="30" width="100" height="20"></rect>
+                    <rect y="60" width="100" height="20"></rect>
+                </svg> 
+                <div class="drop-content">                     
+                    <a href="./index.html" target="_blank">Home</a>
+                    <a href="./plantations.html" target="_blank">Tea Plantations</a>
+                    <a href="./museum.html" target="_blank">Ceylon Tea Museum</a>
+                    <a href="./products.html" target="_blank">By-Products of Tea</a>
+                    <a href="./donatePurchase.html" target="_blank">Purchase and Donate page</a>
+                </div>
+            </div>
+            
+
+            <div class="nav-links">
+                <a href="./index.html" target="_blank">Home</a>
+                <a href="./plantations.html" target="_blank">Tea Plantations</a>
+                <a href="./museum.html" target="_blank">Ceylon Tea Museum</a>
+                <a href="./products.html" target="_blank">By-Products of Tea</a>
+                <a href="./donatePurchase.html" target="_blank">Purchase and Donate page</a>
+            </div>
+        </nav>
+          <!--Introduction and welcome message-->
+        <section class="landing">
+            <div class="textbox">
+                <h1 class="header">Ceylon<br> <span>Tea <span class="priority">Museum</span></span>
+                </h1>
+                <p>
+                    The Ceylon Tea Museum is situated at the former Hantana Tea Factory which was built in 1925, located at the southern side of Kandy, Sri Lanka. Hantana was one of the first areas which successfully opened up the tea cultivation after the failure of the coffee enterprise. The factory that now houses the Museum is a relatively modern building.
+
+                    Abandoned for more than a decade, it was recently revamped and has a good collection of exhibits on the tea pioneers James Taylor and Thomas Lipton. The Tea Museum is a building which consists of four floors where from ground floor to second floor is the old machineries, library and auditorium. While on the third floor the tea lovers can purchase and taste the flavors of Sri Lankan tea. And on the fourth floor one can enjoy the captivating view of the hills while sipping their favourite tea without paying any penny.
+                    
+                    The building is full of original machinery like the iconic “Little Giant Tea Roller” which twists the dried tea leaves into spirals for cutting. There are also archival prints of 19th century industry which also includes the life and works of the tea pioneer James Taylor. The factory is a pleasant three-wheeler ride up from Kandy and is well worth a visit.
+                    
+                    Kandy is a mandatory stop on every traveller’s itinerary and the location of the Ceylon Tea Museum at Hantana enhances the attraction of the hill country to the viewers. Also, its at a convenient distance to the Peradeniya Botanical Gardens and Loolecondera estate where tea was first grown commercially in Sri Lanka makes Hantana the perfect location.                </p>
+                <img src="./images/museum1.webp" alt="ceylon tea museum">
+               
+            </div>
+        </section>
+        <!--Image gallery section-->
+        <section class="image-gallery">
+            <h1 class="heading">Photo Gallery</h1>
+            <div class="row"> 
+                <div class="col"><img src="./images/museum2.webp" alt="ceylon tea museum"></div>    
+                <div class="col"><img src="./images/museum3.webp" alt="ceylon tea museum"></div>   
+                <div class="col"><img src="./images/museum4.webp" alt="ceylon tea museum"></div>    
+                <div class="col"><img src="./images/museum5.webp" alt="ceylon tea museum"></div>    
+                <div class="col"><img src="./images/museum6.webp" alt="ceylon tea museum"></div>    
+                <div class="col"><img src="./images/museum7.webp" alt="ceylon tea museum"></div>    
+            </div>       
+        </section>
+        <section class="map-section">
+            <h1 class="heading">Location of Museum</h1>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.7553348744837!2d80.63054511477492!3d7.268659394753429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae368a77d5cbf91%3A0xba828c0e203b5306!2sCeylon%20Tea%20Museum!5e0!3m2!1sen!2slk!4v1662999082807!5m2!1sen!2slk" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <!--ticket purchase form-->
+        <div id="form">
+            <h1>Ticket Booking</h1>
+            <form id="ticketForm">
+                <!--tickets-->
+                <h4>Personal Details</h4>
+                <div>
+                    <label for="name">Enter your Name: </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="emailAdd">Enter your Email Address: </label>
+                    <input type="text" id="emailAdd" name="emailAdd" required>
+                </div>
+                <h4>Number of Tickets</h4>
+                <div>
+                    <label for="Fadults">Number of Foreign Adults: </label>
+                    <input type="number" id="Fadults" name="Fadults"  min="0" value="0">
+                </div>
+                <div>
+                    <label for="Fchildren">Number of Foreign Children: </label>
+                    <input type="number" id="Fchildren" name="Fchildren"  min="0" value="0">
+                </div>
+                <div>
+                    <label for="Ladults">Number of Local Adults: </label>
+                    <input type="number" id="Ladults" name="Ladults"  min="0" value="0">
+                </div>
+                <div>
+                    <label for="childU15">Number of Local Children Under the Age of 15: </label>
+                    <input type="number" id="childU15" name="childU15"  min="0" value="0">
+                </div>
+                <div>
+                    <label for="childU6">Number of Local Children Under the Age of 6: </label>
+                    <input type="number" id="childU6" name="childU6"  min="0" value="0">
+                </div>
+                <h4>Optionals</h4>
+                <div>
+                    <label for="annualPass">Enter the Number of Annual Passes: </label>
+                    <input type="number" id="annualPass" name="annualPass" min="0" value="0">
+                </div>
+                <div>
+                    <label for="foodToken">Enter the Number of Food Tokens: </label>
+                    <input type="number" id="foodToken" name="foodToken" min="0" value="0">
+                </div>
+                
+                
+                <!--duration-->
+                <div id="durations">
+                    <h4>Duration</h4>
+                    <p>
+                        <label for="3hr">3 Hours</label>
+                        <input type="radio" id="3hr" name="duration" value="3hr">
+                    </p>
+                    <p>
+                        <label for="halfDay">Half Day</label>
+                        <input type="radio" id="halfDay" name="duration" value="halfDay">
+                    </p>
+                    <p>
+                        <label for="fullDay">Full Day</label>
+                        <input type="radio" id="fullDay" name="duration" value="fullDay">
+                    </p>
+                    <p>
+                        <label for="2days">Two Days</label>
+                        <input type="radio" id="2days" name="duration" value="2days">
+                    </p>
+                
+                </div>
+                <!--add to order and place order button-->
+                <div id="buttons">
+                    <button type="submit" id="addToOrder" 
+                            name="addToOrder">Add to Order</button>
+                    <button type="submit" id="placeToOrder" 
+                            name="placeToOrder">Place Order</button>
+                    <button type="reset" id="reset">Reset Order</button>
+                </div>
+                
+            </form>
+            <div id="output">
+                <p id="p1"></p>
+                <p id="p2"></p>
+                <p id="p3"></p>
+                <p id="p4"></p>
+                <p id="p5"></p>
+                <p id="p6"></p>
+                <p id="p7"></p>
+                <p id="p8"></p>
+                <p id="p9"></p>
+                <p id="p10"></p>
+                <p id="p11"></p>
+            </div>
+
+        </div>
+        <!--donate form-->
+        <div class="donate">
+            <h1>Donate!</h1>
+            <form id="donate">
+                <div>
+                    <label for="name">Donator's Name</label><br>
+                    <input class="box1" type="text" name="name" id="namedonate" placeholder="Enter your Name"><br>
+                </div>
+                <div>
+                    <label for="email">Email</label><br>
+                    <input class="box1" type="email" name="email" id="emaildonate" placeholder="Enter your Email"><br>
+                </div>
+                <div>
+                    <label id="cardnum">Card Number</label><br>
+                    <input class="box1" type="text" name="number" id="numberdonate" placeholder="0000 0000 0000 0000" maxlength="16" required><br>
+                </div>
+                <div>
+                    <label id="cardem">Card expiry Date </label><br>
+                <input class="box2" type="month" name="month" id="monthdonate" placeholder="MM/YY" maxlength="5"><br>
+                </div>
+              
+                <div>
+                    <label id="cardcvc">CVC</label><br>
+                    <input class="box2" type="text" name="cvc" id="cvc" placeholder="cvc" maxlength="3" required><br>
+                </div>
+
+                <div>
+                    <label for="amount">Select Amount</label><br>
+                  <select id="donateamount">
+                      <option value="">--Select here--</option>
+                      <option value="0">Rs.100</option>
+                      <option value="1">Rs.250</option>
+                      <option value="2">Rs.500</option>
+                      <option value="3">Rs.1000</option>
+                      <option value="4">Rs.2500</option>
+                      <option value="5">Rs.5000</option>
+                      <option value="6">Rs.10000</option>     
+                  </select>
+                </div>
+                <div>
+                    <button id="donation" type="button">Donate</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <!--the image museum1 and information was taken from https://traveltriangle.com/blog/ceylon-tea-museum/-->
+        <!-- images museum2 to 7 taken from   www.historyofceylontea.com 
+        Photographed by : David Colin-Thomé
+        Photo Taken : 2008 August-->
+
+        <section id="footer">
+            <div class="footer container">
+                <div><h1>Ceylon Tea</h1></div>
+                <h2>Symbol of Quality</h2>
+                <div class="social-icon">
+                    <div class="social-item">
+                        <a href="#"><img src="./images/facebook.png" alt=""></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="./images/instagram.png" alt=""></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="./images/twitter.png" alt=""></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="./images/tiktok.png" alt=""></a>
+                    </div>
+                </div>
+                <p>Copyright &copy; Lankan Tea Sri Lanka | All rights reserved | Designed by Dinil Gamage</p>
+            </div>
+        </section>
+    </footer>
+    <script src="script/script.js"></script>
+    <script src="./script/purchase.js"></script>
+    <script src="./script/donate.js"></script>
+</body>
+</html>

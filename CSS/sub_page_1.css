@@ -1,0 +1,296 @@
+/* Element Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------variables-----*/
+:root{
+    --mainColor: #f4f4f4;
+}
+/* main */
+
+body {
+    width: 100%;
+    background-color: #4F5261;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url("../images/tea-estateimg.jpg");
+    background-size: contain;
+    animation: fade-in 2s; 
+    
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 1100px;
+}
+
+
+/* Navbar */
+
+nav {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+}
+
+nav:hover {
+    height: 180px
+}
+
+.nav-links {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    right: calc(30px - 1vw);
+    display: none;
+    fill: var(--mainColor);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.menu:hover {
+    fill: rgb(252, 252, 252);
+    animation: menuShake 0.5s;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 10px 14px;
+    margin-left: calc(1vw - 10px);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    transition: 2s;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    background-color: var(--mainColor);
+    color: rgb(0, 0, 0);
+}
+
+nav img {
+    height: 200px;
+}
+
+.drop-down {
+    width: 100px;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.drop-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-content a:hover {
+    color: green;
+    padding: 12px 16px;
+    background-color: var(--mainColor);
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Mobile response for nav */
+
+@media (max-width:568px) {
+    .menu {
+        display: block;
+    }
+    .nav-links a {
+        display: none;
+    }
+}
+
+
+/* Body section 1 */
+
+.section1 {
+    padding: 5%;
+    background-color:rgba(2, 245, 160, 0.767);
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    margin-bottom: 10%;
+    padding-bottom: 5%;
+    background-color: rgba(2, 245, 160, 0.767);
+    animation-name: example;
+    animation-duration: 4s;
+    
+    
+}
+
+.h1 {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+}
+
+
+.textbox {
+    text-align: center;
+    padding: 5%;
+    margin: auto;
+    max-width: 800px;
+    min-height: 100%;
+
+}
+
+
+.h3 {
+    padding: 1%;
+    background-color : rgba(231, 231, 231, 0.37);
+    color: #f1f1f1;
+
+}
+
+
+.textbox p {
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(124, 140, 35);
+    padding: 12px 34px;
+    font-size: 1.2rem;
+    margin-top: 50px;
+}
+
+.btn:hover {
+    border: 1px;
+    background-color: rgb(221, 218, 41);
+    transition: 0.8s;
+}
+.main-image {
+    width: 100%;
+    text-align: center;
+
+}
+
+.main-image h2 {
+    font-size: 1.6rem;
+}
+
+.main-image img {
+    
+    width: 100%;
+    max-width: 600px;
+    transition: 1s;
+}
+
+.main-image img:hover {
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width:568px) {
+    .main-photo img {
+        margin: 0px;
+    }
+}
+
+/* Content Part 2*/
+
+.content {
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.6rem;
+    background-color:rgba(2, 245, 172, 0.686);
+    color: #f1f1f1;
+    background-color: rgba(2, 245, 160, 0.767);
+    animation-name: example;
+    animation-duration: 4s;
+    
+}
+
+.content p {
+    margin: auto;
+    max-width: 800px;
+}
+
+
+/* footer */
+.footer {
+    text-align: center;
+    padding: 5%;
+    margin: auto;
+    max-width: 800px;
+    min-height: 100%;
+    
+}
+
+.footer p {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    color: #f1f1f1;
+}
+
+.social-links{
+    height: 20px;
+    cursor: pointer;
+}
+
+/*Animations*/
+
+@keyframes menuShake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+}
+
+@keyframes fade-in {
+    from{opacity: 0;}
+    to{opacity: 1;}
+    
+}
+
+  
+  @keyframes example {
+    from {background-color: rgb(10, 2, 40);}
+    to {background-color: rgba(2, 245, 160, 0.767);
+    }
+}
+
+  
